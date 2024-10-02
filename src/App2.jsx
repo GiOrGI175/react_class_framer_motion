@@ -33,7 +33,12 @@ const App2 = () => {
   return (
     <>
       <div className='max-w-[1110px] w-full mx-auto'>
-        <motion.div className='text-center w-[100px] h-12 bg-gray-800 flex items-center justify-center cursor-pointer rounded-lg shadow-md'>
+        <motion.div
+          className='text-center w-[100px] h-12 bg-gray-800 flex items-center justify-center cursor-pointer rounded-lg shadow-md'
+          onClick={() => {
+            setIsNavVisible((prev) => !prev);
+          }}
+        >
           <span className='text-white'>navbar</span>
         </motion.div>
 
